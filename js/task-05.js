@@ -16,5 +16,5 @@ buttonElement.addEventListener('click', changeColorFn);
 
 function changeColorFn() {
   bodyForm.style.backgroundColor = getRandomHexColor(); 
-  colorForm.style.backgroundColor = bodyForm.style.backgroundColor; 
+  colorForm.textContent = bodyForm.style.backgroundColor; 
 }

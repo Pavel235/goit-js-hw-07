@@ -35,9 +35,11 @@ createBtn.addEventListener('click', () => {
    const amount = Number(inputBtn.value);
 
    if (amount >= 1 && amount <= 100) {
-    createBoxes(amount);
     inputBtn.value = '';
+    boxesRef.innerHTML = '';
+    createBoxes(amount);
   }
+
 })
 
 destroyBtn.addEventListener('click', destroyBoxes); 
